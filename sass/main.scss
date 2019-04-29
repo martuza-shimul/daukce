@@ -1,0 +1,688 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700|Fira+Sans|Fira+Sans+Condensed:400,700');
+@import "customVariable";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+
+
+// Header section================================================================
+
+.nav1{
+	margin-top: 48px;
+}
+.navbar-brand {
+	font-family: $font-family-headings;
+	font-weight: bold;
+}
+
+.navbar-nav {
+
+  > li > a {
+     
+     font-family: $font-family-headings;
+	 font-weight: normal;
+  }
+  .active > a {
+	font-weight: bold;
+	}
+
+ }
+
+ .action_bar{
+
+ 	min-height: 48px;
+	background: $navbar-default-bg;
+ 	
+ 	ul{
+ 		margin: 0;
+ 		padding: 0;
+ 		list-style: none;
+ 		box-sizing: border-box;
+ 		padding: 9px 0 4px 0;
+
+ 	}
+
+ 	ul li{
+ 		display: inline-block;
+ 		padding-right: 25px;
+ 		
+ 	}
+ 	ul li a{
+ 		text-decoration: none;
+ 		color: $gunmetal;
+ 		font-family: $font-family-headings;
+ 		font-weight: bold;
+ 		font-size: $font-size-small;
+ 		letter-spacing: 0.5px;
+ 	}
+ 	ul li a:hover{
+ 		color: $picton-blue;
+ 	}
+ 	
+ }
+
+
+// Footer section======================================================
+
+
+.footer{
+
+ 	/*min-height: 48px;*/
+	background: $navbar-default-bg;
+	border-top: 1px solid $navbar-default-border;
+ 	
+ 	ul{
+ 		margin: 0;
+ 		padding: 0;
+ 		list-style: none;
+ 		box-sizing: border-box;
+ 		margin-top: 76px;
+ 		text-align: center;
+
+ 	}
+
+ 	ul li{
+ 		display: inline-block;
+ 		padding: 0 10px 0 10px;
+ 		
+ 	}
+ 	ul li a{
+ 		text-decoration: none;
+ 		color: $picton-blue;
+ 		font-family: $font-family-body;
+ 		font-weight: normal;
+ 		font-size: 14px;
+ 		line-height: 28px;
+ 	}
+ 	ul li a:hover{
+ 		color: $picton-blue;
+ 	}
+ 	p{
+ 		margin: 16px 0 35px 0;
+ 	}
+ 	
+ }
+
+
+
+// Page titles=======================================================
+
+.page_title{
+	font-size: $page-title-font-size;
+	line-height: $page-title-line-height;
+	font-family: $font-family-headings;
+	color: $raisin-black;
+}
+
+.sub_title{
+	font-size: $page-sub-title-font-size;
+	line-height: $page-sub-title-line-height;
+	color: $gunmetal;
+	font-family: $font-family-headings;
+}
+
+
+// Buttons ===============================================================
+
+.button_lg{
+	min-width: 260px;
+	height: 60px;
+	background: $picton-blue;
+	box-shadow: 0 12px 32px 0 rgba(46,70,136,0.16);
+	border: 0;
+	color: #FFFFFF;	
+	font-family: $font-family-body;	
+	font-size: 16px;	
+	font-weight: 500;	
+	letter-spacing: 1px;	
+	line-height: 28px;	
+	text-align: center;
+	border-radius: 0;
+}
+
+.button_lg:hover{
+	background-color: #36D5F5;
+}
+
+.button_md{
+	min-width: 160px;
+	height: 36px;
+	background: $raisin-black;
+	border: 0;
+	color: #FFFFFF;	
+	font-family: $font-family-table;	
+	font-size: 13px;	
+	font-weight: 500;	
+	letter-spacing: 1px;	
+	line-height: 15px;	
+	text-align: center;
+}
+
+
+
+.button_md:hover{
+	background-color: #54575C;
+	box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+}
+
+.button_md_inverse{
+	background: $picton-blue;
+}
+
+.button_md_inverse:hover{
+	background-color: #36D5F5;
+	box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.button_tiny{
+	min-width: 50px;
+	height: 24px;
+	background: $picton-blue;
+	border: 0;
+	color: #FFFFFF;	
+	font-family: $font-family-body;	
+	font-size: 12px;	
+	font-weight: normal;		
+	line-height: 24px;	
+	text-align: center;
+}
+
+.button_tiny:hover{
+	background-color: #36D5F5;
+}
+
+.button_tertiary{
+	color: $picton-blue;	
+	font-family: $font-family-table;	
+	font-size: 13px;	
+	font-weight: 500;	
+	letter-spacing: 1px;	
+	line-height: 15px;	
+	text-align: center; 
+	border: none;
+	background: #fff;
+}
+
+.button_tertiary:hover{
+	color: #36D5F5;
+}
+
+.block{
+	display: block;
+	width: 100%;
+}
+
+.font_bold{
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+
+ // pages customization===================================================
+
+
+p{
+ 	margin: 0;
+ }
+
+h1{
+	letter-spacing: 1px;
+}
+
+// Table customization======================================================
+
+.table{
+		border: 1px solid $table-border-color;
+	}
+	
+	.table>tbody>tr>td{
+		font-size: $table-font-size;
+		line-height: $table-line-height;
+		
+	}
+	table th{
+		font-family: $font-family-headings;
+		color: $gunmetal;
+	}
+	table td{
+		font-family: $font-family-table;
+		color: $gunmetal;
+		/*text-align: center;*/
+	}
+
+
+
+
+ // 01-1-1-Homepage==============================================================
+
+ .content_title{
+ 	margin-bottom: 26px;
+ 	margin-top: 83px;
+ }
+ .content_subtitle{
+ 	margin: 0 36px;
+
+ 	p{
+ 		font-size: 16px;
+ 	}
+ }
+
+.table_element{
+
+	transform: translateY(-42%);
+	position: relative;
+
+	table tr:last-child td{
+		padding: 28px;
+	}
+	
+}
+
+.background{
+		background: $han-blue;
+	}
+
+.section_b{
+	margin-top: 283px;
+
+	
+	.button{
+		position: absolute;
+		left: 38%;
+		bottom: -7%;
+	}
+}
+
+.section_c{
+	margin: 126px 0;
+
+	.title h1{
+		margin-bottom: 80px;
+	}
+}
+
+.section_d{
+	margin: 144px 0;
+
+	.content_details{
+		margin: 107px 0;
+
+		h3{
+			margin-bottom: 32px;
+			margin-top: 0;
+			line-height: 2;
+		}
+
+		.sub_title{
+			margin: 16px 0;
+		}
+	}
+}
+
+.section_last{
+	
+	.page_title{
+		color: #fff;
+		font-size: ($page-title-font-size + 10);
+		line-height: ($page-title-line-height + 12);
+		padding: 30px 0;
+	}
+	.content_wrapper{
+		padding: 144px 0;
+	}
+	.button{
+		margin-top: 50px;
+	}
+}
+
+
+// 02-1-1-Auctions-Logged In page===================================================
+
+.section_wrapper{
+	margin: 108px 0 144px 0;
+
+	.table_button{
+		/*border: 1px solid $raisin-black;*/
+		padding: 5px 14px;
+		background: $picton-blue;
+		color: #fff;
+		/*font-weight: bold;*/
+		letter-spacing: 1px;
+	}
+
+	.row_danger{
+		
+		border-left: 8px solid $carmine-pink;
+		background: rgba(235, 65, 66, 0.1);
+    
+	}
+
+	.row_primary{
+		border-left: 8px solid $picton-blue;
+		background: rgba(63, 202, 231, 0.1);
+	}
+
+	.content_button{
+		margin-right: 35px;
+	}
+}
+
+
+// 02-2-1-Auctions-Auction Detail================================================
+
+.wrapper{
+	margin: 77px 0 100px 0;
+
+	.icon_color{
+		color: $han-blue;
+	}
+
+	h1{
+		margin: 10px 0 71px 0;
+
+	}
+	h3{
+		margin-bottom: 0px;
+	}
+
+	.headings p{
+		color: $picton-blue;
+	}
+
+	.sub_content{
+		span{
+			font-size: 12px;
+			line-height: 24px;
+			margin: 10px 0px 10px 0;
+		}
+	}
+	.table{
+		margin: 34px 0 0 0;
+		border: none;
+
+		th,td{
+			border: none;
+		}
+	}
+	.sub_title{
+		margin: 26px 0 5px 0;
+
+		i{
+			margin-left: 100px;
+		}
+	}
+
+	.right_side_bar{
+
+		.first{
+			margin-top:34px;
+		}
+		.input{
+			input{
+			width: 100%;
+			height: 60px;
+			border: 1px solid #E2E3E3;
+			margin-top: 15px;
+			/*margin-left: 20px;*/
+			color: $raisin-black;
+			font-size: 34px;
+			padding-left: 20px;
+			}
+		}
+
+		.text_after_checkbox{
+			margin: 15px 0;
+			font-size: 12px;
+			line-height: 24px;
+		}
+
+		.button_lg, .button_md{
+			width: 100%;
+			margin-top: 25px;
+		}
+
+		.button_tiny{
+			width: 32%;
+			margin: 10px 0;
+		}
+		i{
+			color: $raisin-black;
+		}
+		.icon_color{
+		color: $han-blue;
+	}
+
+	}
+	.table_content{
+
+		h3{
+			margin: 55px 0;
+		}
+
+		tr{
+			border-bottom: 1px solid $table-border-color;
+			text-align: center;
+		}
+		td{
+			 padding: $table-cell-padding ($table-cell-padding * 0) $table-cell-padding ($table-cell-padding * 0);
+		}
+		i{
+			margin-right: 10px;
+		}
+
+		.colored_icon_black i{
+			color: $raisin-black;
+		}
+		.colored_icon_blue i{
+			color: $picton-blue;
+		}
+		.colored_icon_silver i{
+			color: $roman-silver;
+		}
+		.button_tertiary{
+			margin: 40px 0;
+			font-weight: bold;
+		}
+	}
+
+}
+
+
+// 02-3-1-Auctions-New Auction-Empty=================================
+
+.message{
+	
+
+	textarea{
+		min-height: 192px;
+		padding: 15px;
+	}
+
+}
+
+.contact_form{
+	button{
+		margin-top: 40px;
+	}
+}
+
+
+
+// 04-1-1-How It Works-How To Buy-Logged In======================================
+
+.wrapper{
+	
+	.headings1 h1{
+		margin-bottom: 36px;
+		margin-top: 37px;
+
+	}
+	.section{
+		margin: 0 0 47px 0;
+		overflow: hidden;
+
+		h3{
+			margin: 47px 0 36px 0;
+		}
+		p{
+			margin-bottom: 25px;
+		}
+	}
+}
+
+/*.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}*/
+
+.dropdown-menu{
+	display: none;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+	transition-delay: 1000;
+}
+
+// modals============================================================================
+
+.wrapper{
+  
+
+  .modal_section{
+  	min-height: 400px;
+  }
+  
+  .modal{
+  	  position: fixed;
+	  top: -32px;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding-left: 50%;
+	  overflow-scrolling: auto;
+  }
+  .modal_content{
+  	box-sizing: border-box;
+  	margin: 30px 30px;
+
+  	button{
+  		margin: 15px 0;
+  	}
+  	.button_tertiary, .form-group{
+  		margin: 25px 0;
+  	}
+  	.fb{
+  		background: #3B5998;
+  	}
+  	.twt{
+  		background: #1DA1F2;
+  	}
+  	.mjd{
+  		background: #FFCB08;
+  	}
+  	.first{
+  		color: $roman-silver;
+  	}
+  	.first:hover, .second:hover{
+		color: #36D5F5;
+	}
+	.second{
+		color: $raisin-black;
+		font-weight: bold;
+	}
+
+  	.form-control{
+  		height: 45px;
+  	}
+  	.modal_text{
+  		margin: 60px 0;
+  	}
+
+
+  }
+
+}
+
+@media (max-width: $screen-xs-max) { 
+
+	.wrapper{
+		.modal{
+			padding-left: 0;
+		}
+	}
+
+
+}
+
+// page-30 ========================================================================
+
+.wrapper{
+	.left_side, .right_side{
+
+		padding: 0;
+
+		h3{
+			margin: 0;
+		}
+		.sub_contents{
+			margin: 32px 0;
+		}
+		input[type="checkbox"]{
+			background: #fff;
+			margin-right: 5px;
+			color: #fff;
+		}
+		.table{
+
+			margin: 0;
+
+			td{
+				color: $roman-silver;
+				padding-left: 0;
+			}
+		}
+		.form-group{
+			margin: 40px 0;
+		}
+		.small_text{
+			font-size: 11px;
+			margin: 20px 0;
+		}
+	}
+	.right_side{
+		.duo{
+			.first_field{
+				display: inline-block;
+				width: 65%;
+			}
+			.second_field{
+				display: inline-block;
+				width: 30%;
+				float: right;
+			}
+		}
+		
+	}
+}
+
+
+
+
+.nav_input{
+	height: 35px;
+	border: 0px;
+	color: $gunmetal;
+	margin-top: 15px;
+	padding-left: 0;
+
+}
+.nav_input:focus{
+	border: 0px;
+	box-shadow: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(102, 175, 233, 0);
+
+}
